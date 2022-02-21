@@ -1,0 +1,16 @@
+**/*.iml
+**/.cdk.staging/
+**/.cpcache/
+**/.DS_Store
+**/.idea/
+**/.nrepl-*
+**/.tern-port
+**/build/
+**/cdk.out/
+**/classes/
+**/dev/
+**/junit.xml
+**/node_modules/
+**/target/
+**/out/
+*.txt
