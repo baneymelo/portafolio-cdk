@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.baneymelo</groupId>
+  <groupId>com.baneymelo.summary</groupId>
   <artifactId>summary</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>${project.artifactId}</name>
@@ -70,9 +70,10 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <version>3.1.0</version>
         <configuration>
+          <finalName>${project.name}</finalName>
           <archive>
             <manifest>
-              <mainClass>com.baneymelo.Handle</mainClass>
+              <mainClass>com.baneymelo.App</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
@@ -107,10 +108,11 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.2.0</version>
         <configuration>
+          <finalName>${project.name}</finalName>
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.baneymelo.Handle</mainClass>
+              <mainClass>com.baneymelo.App</mainClass>
             </manifest>
           </archive>
         </configuration>
